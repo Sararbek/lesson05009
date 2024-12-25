@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>lesson05009</title>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <section class="layout">
+
+                <!-- Sidebar -->
+
+            <div class="sidebar">
+                <div class="sidebar__logo">
+                    <img src="./assets/imgs/icon-logo.png" alt="logo">
+                </div>
+                <ul class="sidebar__links">
+                    <li>
+                        <span><img src="./assets/imgs/icon-weather.svg" alt=""></span>
+                        <a href="#">Weather</a>
+                    </li>
+                    <li>
+                        <span><img src="./assets/imgs/icon-list.svg" alt=""></span>
+                        <a href="#">Cities</a>
+                    </li>
+                    <li>
+                        <span><img src="./assets/imgs/icon-map.svg" alt=""></span>
+                        <a href="#">Map</a>
+                    </li>
+                    <li>
+                        <span><img src="./assets/imgs/icon-settings.svg" alt=""></span>
+                        <a href="#">Settings</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Content -->
+
+            <div class="content">
+
+                <!-- Header -->
+            <header class="header">
+                <div class="searchbox">
+                    <input type="text" placeholder="Search for cities">
+                    <button name="close-search"><img src="./assets/imgs/icon-searchclose.svg" alt=""></button>
+                </div>
+            </header>
+
+            <!-- Wrapper -->
+
+            <div class="content__wrapper">
+                <div class="content__leftwrap">
+                    <div class="content__showtempOne">
+                        <div class="content__showtempOne__textSide">
+                            <div class="topMenu">
+                                <p class="cityName">Madrid</p>
+                                <p class="possWeather"></p>
+                            </div>
+                            <div class="mainMenu">
+                                <p class="cityTemp">31°</p>
+                            </div>
+                        </div>
+                        <div class="content__showtempOne__imgSide">
+                            <img class="mainImg" src="https://cdn-icons-png.flaticon.com/512/9055/9055356.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content__showForcast">
+                        <div class="content__showForcast__title">
+                            <p>Today's forecast</p>
+                        </div>
+                        <ul class="content__showForcast__forecastHours">
+                        </ul>
+                    </div>
+                    <div class="content__showExtralInfo">
+                        <div class="content__showExtralInfo__title">
+                            <p>Air conditions</p>
+                            <button>see more</button>
+                        </div>
+                        <ul class="content__showExtralInfo__parts">
+                            <li>
+                                <span><img src="./assets/imgs/icon-realFeel.svg" alt=""></span>
+                                <p>
+                                    <span>real feel</span>
+                                    <span class="realFeel">30°</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span><img src="./assets/imgs/icon-wind.svg" alt=""></span>
+                                <p>
+                                    <span>wind</span>
+                                    <span class="wind">0.2km/h</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span><img src="./assets/imgs/icon-chanceOfRain.svg" alt=""></span>
+                                <p>
+                                    <span>chance of rain</span>
+                                    <span class="chaceOR">0%</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span><img src="./assets/imgs/icon-UVindex.svg" alt=""></span>
+                                <p>
+                                    <span>UV index</span>
+                                    <span class="UVin">3</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content__rightwrap">
+                    <div class="content__rightwrap__title">
+                        <p>10-Day forecast</p>
+                    </div>
+                    <ul class="content__rightwrap__days">   
+                    </ul>
+                </div>
+            </div>
+
+            </div>
+
+            </section>
+        </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
